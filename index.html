@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilies.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-res.css">
+    <script src="https://kit.fontawesome.com/6efd1a9509.js" crossorigin="anonymous"></script>
+    <title>India-Tourism</title>
+</head>
+
+<body>
+    <!--Navbar  -->
+    <nav class="navigation flexX">
+        <div class="nav-part-1">
+            <div><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        </div>
+        <div class="openMenu" onclick="showM()"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-part-2">
+            <ul class="nav-list flexX">
+                <li class="nav-list-elements "><a href="/">
+                        <div class="flexY"><img src="img/svg/home.png" alt="Image"></div>
+                        <div class="center white-text">Home</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/explore.html">
+                        <div class="flexY"><img src="img/svg/explore.png" alt="Image"></div>
+                        <div class="center white-text">Explore</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/trips.html">
+                        <div class="flexY"><img src="img/svg/trip.png" alt="Image"></div>
+                        <div class="center white-text">Trips</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/profile.html">
+                        <div class="flexY"> <img src="img/svg/profile.png" alt="Image"></div>
+                        <div class="center white-text">Profile</div>
+                    </a></li>
+                <div class="logout" onclick="Logout()">Logout</div>
+            </ul>
+        </div>
+        <div class="closeMenu" onclick="closeM()"><i class="fa-solid fa-xmark"></i></div>
+    </nav>
+
+    <div class="container flexX">
+        <section class="container-left">
+            <div class="section-container-right">
+                <div class="slider-container flexX">
+                    <div class="slider">
+                        <a href="#"><img src="img/img-home/1.jpg" alt="image"></a>
+                    </div>
+                    <div class="slider">
+                        <a href="#"><img src="img/img-home/2.jpg" alt="image"></a>
+                    </div>
+                    <div class="slider">
+                        <a href="#"><img src="img/img-home/3.jpg" alt="image"></a>
+                    </div>
+                    <div class="slider">
+                        <a href="#"><img src="img/img-home/4.jpg" alt="image"></a>
+                    </div>
+                    <div class="slider">
+                        <a href="#"><img src="img/img-home/5.jpg" alt="image"></a>
+                    </div>
+                    <div class="slider">
+                        <a href="#"><img src="img/img-home/6.jpg" alt="image"></a>
+                    </div>
+                    <div class="prev-button flexX" onclick="plusSlide(-1)">&#10094;</div>
+                    <div class="next-button flexX" onclick="plusSlide(1)">&#10095;</div>
+
+                    <div class="lines">
+                        <div class="line" onclick="currentSlide(1)"></div>
+                        <div class="line" onclick="currentSlide(2)"></div>
+                        <div class="line" onclick="currentSlide(3)"></div>
+                        <div class="line" onclick="currentSlide(4)"></div>
+                        <div class="line" onclick="currentSlide(5)"></div>
+                        <div class="line" onclick="currentSlide(6)"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-right flexY">
+            <div class="search">
+                <form action="/index.html" method="get">
+                    <input class="form-input" type="text" name="query"
+                        placeholder="&#128269; Search city, country, places to visit">
+                    <button class="btn">Search</button>
+                </form>
+            </div>
+            <div class="popular-destinations flexX">
+                <div class="sub-head flexX">
+                    <h3 class="name-tag">Popular destinations in India</h3>
+                    <div class="see_all"><a class="blue-text" href="/index.html">see all</a></div>
+                </div>
+                <ul class="popular-destinations-items flexX">
+                    <li class="popular-destination flexY">
+                        <img src="img/img-home/delhi.jpg" alt="image">
+                        <div><img id="heart-icon" src="img/img-home/red-heart-icon.svg" alt=""></div>
+                        <a href="/index.html">
+                            <div class=" text-size-1 text-align">Delhi</div>
+                        </a>
+                    </li>
+                    <li class="popular-destination flexY">
+                        <img src="img/img-home/shimla.jpg" alt="image">
+                        <div><img id="heart-icon" src="img/img-home/red-heart-icon.svg" alt=""></div>
+                        <a href="/index.html">
+                            <div class=" text-size-1 text-align">Shimla</div>
+                        </a>
+                    </li>
+                    <li class="popular-destination flexY">
+                        <img src="img/img-home/goa.jpg" alt="image">
+                        <div><img id="heart-icon" src="img/img-home/red-heart-icon.svg" alt=""></div>
+                        <a href="/index.html">
+                            <div class=" text-size-1 text-align">Goa</div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="offers flexX">
+                <div class="sub-head flexX">
+                    <h3 class="name-tag">Offers of the day</h3>
+                    <div class="see_all"><a class="blue-text" href="/index.html">see all</a></div>
+                </div>
+                <ul class="offers-items flexX">
+                    <li class="offer flexY">
+                        <img src="img/img-home/offers/offer1.jpg" alt="THis is popukar vacation image">
+                    </li>
+                    <li class="offer flexY">
+                        <img src="img/img-home/offers/offer2.jpg" alt="THis is popukar vacation image">
+                    </li>
+
+                </ul>
+            </div>
+            <!-- <div class="places-near">
+                <div class="sub-head flexX">
+                    <h3 class="name-tag">Places near you</h3>
+                    <div class="see_all">see all</div>
+                </div>
+                <ul class="popular-destinations-items flexX">
+                    <li class="popular-destination flexY">
+                        <img src="img/popular-destinations/maldives.jpg" alt="THis is popukar vacation image">
+                        <a href=""><div class=" text-align">this is name</div></a>
+                    </li>
+                    <li class="popular-destination flexY">
+                        <img src="img/popular-destinations/maldives.jpg" alt="THis is popukar vacation image">
+                        <a href=""><div class=" text-align">this is name</div></a>
+                    </li>
+
+                </ul>           
+              </div> -->
+        </section>
+        
+    </div>
+    <br>
+
+    <div class="content">
+
+    </div>
+
+    <section id="social-container"></section>
+    <div class="social">
+        <h1 class="center">Connect With Us</h1>
+        <div id="social-handles" class="flexX">
+            <img src="img/social/facebook.svg" alt="facebook.com"><img src="img/social/instagram.svg" alt="instagram.com"><img src="img/social/pinterest.svg" alt="pinterest.com"><img src="img/social/twitter.svg" alt="twitter.com"><img src="img/social/linkedin.svg" alt="linkedin.com"><img src="img/social/youtube.svg" alt="youtube.com">
+        </div>
+    </div>
+    <footer class="footer flexY">
+        <div>copyright &copy; 2022 : PlanMyTrips.com all rights reserved</div>
+        <div class="attribution">
+            Attributions : 
+            <a target="_blank"
+                href="https://www.freepik.com/free-vector/india-background_5974093.htm#query=travel%20tourism%20logo&position=3&from_view=keyword">Image
+                by macrovector</a>|
+            <a target="_blank" href="https://icons8.com">icons8.com</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@mike_swigunski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike
+                Swigunski</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/maldives-tourism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://www.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_19894677.htm#query=flight%20booking&position=16&from_view=keyword">Freepik</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jeffreak08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeffrey
+                Francisco</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jakefagan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake
+                Fagan</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/car-for-off-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank" href="https://www.svgrepo.com/">www.svgrepo.com </a>|
+            <a target="_blank" href="https://uxwing.com/red-heart-icon/">uxwing.com</a>|
+            <a target="_blank"
+                href="https://www.fabhotels.com/blog/tourist-destinations-in-india/">www.fabhotels.com</a>|
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/utilites.js"></script>
+</body>
+
+</html>

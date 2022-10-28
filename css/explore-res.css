@@ -1,0 +1,41 @@
+@media screen and (min-width: 1201px){
+    #up-arrow{
+        right: 6rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .place-item img {
+        width: 20rem;
+        border-radius: 1rem;
+    }
+
+    header {
+        height: 25vh;
+    }
+
+    #up-arrow {
+        right: 4rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .background{
+        height: 20vh;
+    }
+    .place-item img {
+        width: 8rem;
+        border-radius: 0.5rem;
+    }
+    #up-arrow {
+        right: 4rem;
+        bottom: 5rem;
+        width: rem;
+    }
+    .search {
+        padding: 2px;
+        font-size: 1rem;
+        border-radius: 3px;
+    }
+}

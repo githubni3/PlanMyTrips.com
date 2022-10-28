@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6efd1a9509.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/utilies.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/trips.css">
+    <link rel="stylesheet" href="css/trips-res.css">
+    <title>India-Tourism</title>
+</head>
+
+<body>
+
+    <!--Navbar  -->
+    <nav class="navigation flexX">
+        <div class="nav-part-1">
+            <div><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        </div>
+        <div class="openMenu" onclick="showM()"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-part-2">
+            <ul class="nav-list flexX">
+                <li class="nav-list-elements "><a href="/">
+                        <div class="flexY"><img src="img/svg/home.png" alt="Image"></div>
+                        <div class="center white-text">Home</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/explore.html">
+                        <div class="flexY"><img src="img/svg/explore.png" alt="Image"></div>
+                        <div class="center white-text">Explore</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/trips.html">
+                        <div class="flexY"><img src="img/svg/trip.png" alt="Image"></div>
+                        <div class="center white-text">Trips</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/profile.html">
+                        <div class="flexY"> <img src="img/svg/profile.png" alt="Image"></div>
+                        <div class="center white-text">Profile</div>
+                    </a></li>
+                <div class="logout" onclick="Logout()">Logout</div>
+            </ul>
+        </div>
+        <div class="closeMenu" onclick="closeM()"><i class="fa-solid fa-xmark"></i></div>
+    </nav>
+    <div class="container flexX">
+
+        <section class="container-right flexY">
+            <div class="search">
+                <form action="/trips.html" method="get">
+                    <input class="form-input" type="text" name="query"
+                        placeholder="Search city, country, places to visit">
+                    <button class="btn">Search</button>
+                </form>
+            </div>
+
+            <span class="text-size-2 blue-text">What Are You Looking For?</span><br><br>
+            <div class="trips">
+                <div class="ways ">
+                    <ul class="way ">
+                        <li class="way-items" onclick="change(0)">
+                                <div class="flexY"><img class="way-img" src="img/img-trips/hotel.svg" alt="hotel"></div>
+                                <div class="center a-text">Hotel</div>
+                        </li>
+                        <li class="way-items active" onclick="change(1)">
+                                <div class="flexY"><img class="way-img" src="img/img-trips/airplane.svg" alt="Flight">
+                                </div>
+                                <div class="center a-text">Flight</div>
+                        </li>
+                        <li class="way-items" onclick="change(2)">
+                                <div class="flexY"><img class="way-img" src="img/img-trips/car.svg" alt="Car"></div>
+                                <div class="center a-text">Trips</div>
+                        </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            <div class="offers flexX">
+                <div class="sub-head flexX">
+                    <h3 class="name-tag">Offers of the day</h3>
+                    <div class="see_all"><a class="blue-text" href="/trips.html">see all</a></div>
+                </div>
+                <ul class="offers-items flexX">
+                    <li class="offer flexY">
+                        <img src="img/img-home/offers/offer1.jpg" alt="THis is popukar vacation image">
+                    </li>
+                    <li class="offer flexY">
+                        <img src="img/img-home/offers/offer2.jpg" alt="THis is popukar vacation image">
+                    </li>
+
+                </ul>          
+            </div>
+
+        </section>
+        <section class="right-side">
+                <div class="right-side-items flexY d-none">
+                    <form action="/trips.html" method="get" class="input-form flexY">
+                        <label for="hotel-name"><span class="white-text">Hotel Name</span><input type="text" placeholder="Hotel name" required></label>
+                        
+                        <label for="start-date">
+                            <span class="white-text">Days : </span>
+                            <input type="date" name="start-date" id="start-date"  required> <span class="white-text"> to</span>
+                            <input type="date" name="end-date" id="end-date" required></label> 
+                            <br>
+                            <label for="no-of-people" class="white-text">Number Of Persons: <br>
+                                Adults: <input type="number" placeholder="12 years & Above (On travel day)"><br>
+                                Children: <input type="number" placeholder="2 - 12 years (On travel day)">
+                            </label>
+                        <button class="btn3"type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="right-side-items flexY ">
+                    <form action="/trips.html" method="get" class="input-form flexY">
+                        <div id="route-type">
+                            <div id="flight-form" class="flexX">
+                                <div class="flexY">
+                                    <img src="img/img-trips/onw-way.svg" alt=""><input type="radio" name="route-type" id="airport" checked><span class="white-text center">One Way</span>
+    
+                                </div>
+                                <div class="flexY">
+                                    <img src="img/img-trips/round-trip.svg" alt=""><input type="radio" name="route-type" id="local" ><span class="white-text center">Round Trip</span>
+                                    
+                                </div>
+                                <div class="flexY">
+                                    <img src="img/img-trips/multi-city.svg" alt=""><input type="radio" name="route-type" id="outstation" ><span class="white-text center">Multi City</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <label for="from"><input type="text" placeholder="From..." required></label>
+                        <label for="to"><input type="text" placeholder="To..." required></label>
+                        <label class="white-text" for="date-time">Date: <input type="date" name="date" id="date" required></label>
+                        <label for="no-of-people" class="white-text">Number Of Travellers: <br>
+                            Adults: <input type="number" placeholder="12 years & Above (On travel day)"><br>
+                            Children: <input type="number" placeholder="2 - 12 years (On travel day)"><br>
+                            Infants: <input type="number" placeholder="Under 2 years (On travel day)">
+                        </label>
+
+                        <div id="flight-cabin">
+                            <div class="flexX">
+                                <div class="cabin-type flexY">
+                                    <span class="white-text center">Economy: </span><input type="radio" name="cabin-type" id="Economy" checked>
+    
+                                </div>
+                                <div class="cabin-type flexY">
+                                    <span class="white-text center">Preminum Economy: </span><input type="radio" name="cabin-type" id="Preminum Economy">
+                                    
+                                </div>
+                                <div class="cabin-type flexY">
+                                    <span class="white-text center">Business: </span><input type="radio" name="cabin-type" id="Business">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn3"type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="right-side-items flexY d-none">
+                    <form action="/trips.html" method="get" class="input-form flexY">
+                        <div id="route-type">
+                            <div class="flexX">
+                                <div class="flexY">
+                                    <img src="img/img-trips/airplane2.svg" alt=""><input type="radio" name="route-type" id="airport" checked><span class="white-text center">Airport</span>
+    
+                                </div>
+                                <div class="flexY">
+                                    <img src="img/img-trips/local.svg" alt=""><input type="radio" name="route-type" id="local" ><span class="white-text center">Local</span>
+                                    
+                                </div>
+                                <div class="flexY">
+                                    <img src="img/img-trips/outstation.svg" alt=""><input type="radio" name="route-type" id="outstation" ><span class="white-text center">OutStation</span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <label for="from"><input type="text" placeholder="From..." required></label>
+                        <label for="to"><input type="text" placeholder="To..." required></label>
+                        <label for="date-time"><input type="date" name="date" id="date" required><input type="time" name="time" id="time" required></label> 
+                        <button class="btn3"type="submit">Search</button>
+                    </form>
+                </div>
+                
+                
+        </section>
+    </div>
+    <br>
+
+    <div class="content">
+        <section id="trip-section">
+            <div class="filter">
+                <button id="btn">Sort By</button>
+                <button id="btn">Filter</button>
+            </div>
+    
+            <div id="hotels" class="">
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Andaz Delhi</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <div><span id="rating">&#9733; 4.7</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">49999Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel2.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4> The Taj Mahal Palace, Mumbai</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <div><span id="rating">&#9733; 4.7</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">30,902Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel3.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>ITC Grand Chola, Chennai</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <div><span id="rating">&#9733; 4.7</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">12,389Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel4.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Riva Beach Resort</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div><span id="rating">&#9733; 4.3</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">7,084Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel5.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Le Meridien Hyderabad</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        <div><span id="rating">&#9733; 4.3</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">6,063Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel6.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Hotel Tourist Empire</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div><span id="rating">&#9733; 3.7</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">1,080Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel7.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Taj Skyline</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div><span id="rating">&#9733; 4.5</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">23,541Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel8.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Fortune JP Palace</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div><span id="rating">&#9733; 4.2</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">4,631Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel9.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>Rangniwas Palace Hotel</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div><span id="rating">&#9733; 4.2</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">2,216Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                <div class="h-card flexX">
+                    <img src="img/img-trips/hotel10.jpg" alt="hotel">
+                    <div class="card-detail">
+                        <h4>De Sovrani</h4>
+                        <span id="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                        <div><span id="rating">&#9733; 4.1</span> <span>1254 reviews</span></div>
+                        <br>
+                        <div>Amenities</div>
+                        <div id="amenities">
+                            <img src="img/img-trips/parking.svg" alt="parking"><img src="img/img-trips/wifi.svg"
+                                alt="wifi"><img src="img/img-trips/bar.svg" alt="bar"><img src="img/img-trips/gym.svg"
+                                alt="gym"><img id="more" src="img/img-trips/menu-dots.svg" alt="more">
+                        </div>
+                        <div id="price"><span id="price1" class="blue-text">2,976Rs/night</span><span><button
+                                    class="btn2">Book Now</button></span></div>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div id="cars" class="">
+                
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Swift Dzire</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">10Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car2.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Suzuki Ertica</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol/CNG</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">12Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car3.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Swift Dzire</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">10Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car4.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Suzuki Ertica</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol/CNG</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">12Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car5.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Swift Dzire</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">10Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car6.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Suzuki Ertica</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol/CNG</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">12Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car7.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Swift Dzire</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">10Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car8.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Suzuki Ertica</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol/CNG</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">12Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car9.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Swift Dzire</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">10Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+                <div class="c-card flexX">
+                    <img src="img/img-trips/car10.jpg" alt="car">
+                    <div class="card-detail">
+                        <h4>Maruti Suzuki Ertica</h4>
+                        <div id="feature">
+                            <span class="feature-box">7 Seater</span><span class="feature-box">Petrol/CNG</span>
+                        </div>
+    
+                        <div id="price"><span id="price1" class="blue-text">12Rs/km</span><span><button class="btn2">Book
+                                    Now</button></span></div>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <section id="social-container"></section>
+    <div class="social">
+        <h1 class="center">Connect With Us</h1>
+        <div id="social-handles" class="flexX">
+            <img src="img/social/facebook.svg" alt="facebook.com"><img src="img/social/instagram.svg" alt="instagram.com"><img src="img/social/pinterest.svg" alt="pinterest.com"><img src="img/social/twitter.svg" alt="twitter.com"><img src="img/social/linkedin.svg" alt="linkedin.com"><img src="img/social/youtube.svg" alt="youtube.com">
+        </div>
+    </div>
+    <footer class="footer flexY">
+        <div>copyright &copy; 2022 : PlanMyTrips.com all rights reserved</div>
+        <div class="attribution">
+            Attributions : 
+            <a target="_blank"
+                href="https://www.freepik.com/free-vector/india-background_5974093.htm#query=travel%20tourism%20logo&position=3&from_view=keyword">Image
+                by macrovector</a>|
+            <a target="_blank" href="https://icons8.com">icons8.com</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@mike_swigunski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike
+                Swigunski</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/maldives-tourism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://www.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_19894677.htm#query=flight%20booking&position=16&from_view=keyword">Freepik</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jeffreak08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeffrey
+                Francisco</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jakefagan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake
+                Fagan</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/car-for-off-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank" href="https://www.svgrepo.com/">www.svgrepo.com </a>|
+            <a target="_blank" href="https://uxwing.com/red-heart-icon/">uxwing.com</a>|
+            <a target="_blank"
+                href="https://www.fabhotels.com/blog/tourist-destinations-in-india/">www.fabhotels.com</a>|
+        </div>
+    </footer>
+
+    <script src="js/trips.js"></script>
+    <script src="js/utilites.js"></script>
+</body>
+
+</html>

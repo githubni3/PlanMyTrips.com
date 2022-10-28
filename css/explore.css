@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+:root {
+    --theme-color: rgb(120, 242, 218);
+    --theme-gradient-color: linear-gradient(45deg, rgb(154, 220, 232), rgb(129, 129, 219));
+    --font1: 'Baloo Bhaina 2', cursive;
+    --font2: 'Noto Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: white !important;
+}
+.background {
+    background: rgba(0, 0, 0, 0.1) url("../img/img-explore/explore_img.jpg");
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+header {
+    height: 50vh;
+    /* opacity: 0.8; */
+    z-index: -1;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #exp-search{
+    position: absolute;
+    top: 20%;
+    right: 1rem;
+    width: 50%;
+    margin: auto;
+} */
+
+.search{
+    width: 40vw;
+    padding: 1rem;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+}
+
+/* flag........ */
+
+#top{
+    background-color: #fdccff;
+    padding: 1rem 0;
+    font-family: var(--font1);
+}
+
+#up-arrow{
+    width: 4rem;
+    position: fixed;
+    cursor: pointer;
+    bottom: 2rem;
+    right: 4rem;
+}
+
+.places{
+    width: 60vw;
+    height: auto;
+    background-color: #f5f5f5;
+    z-index: -2;
+    position: sticky;
+}
+
+.place-item{
+    width: 40vw;
+    margin: 2rem;
+}
+.place-item img{
+    margin: 1rem;
+    width: 35rem;
+    border-radius: 1rem;
+}
+
+#about-place{
+    width: 40vw;
+}
+
+.list{
+    margin: 1.5rem;
+    list-style: disc;
+}
+
+.sub-list{
+    list-style: circle;
+    padding: 0 20px;
+}
+

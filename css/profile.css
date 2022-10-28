@@ -1,0 +1,145 @@
+
+.container-profile{
+    /* background-color: red; */
+    /* width: 90vw; */
+    flex: 90%;
+    height: auto;
+    /* z-index: -1; */
+    
+}
+
+.coverphoto{
+    width: 100%;
+    height: 45vh;
+    background: url("../img/img-profile/Dal\ Lake\ Srinagar.jpg") no-repeat center center;
+    background-size: cover;
+    /* border: 2px solid red; */
+    padding: 100px;
+    position: relative;
+    z-index: -1;
+}
+
+.coverphoto img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.profile{
+    width: 100%;
+    height: auto;
+    
+    background-color: white;
+}
+
+.profileDetail{
+    /* background-color: green; */
+    justify-content: center;
+    position: relative;
+    
+}
+
+.profilephoto{
+    position: relative;
+}
+
+.profilephoto img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 10rem;
+}
+
+#follow{
+    width: 20vw;
+
+}
+
+#edit{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    bottom: 1rem;
+    right: 4rem;
+    filter: invert(100%);
+    /* border: 2px solid white; */
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+#edit-profile{
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: black;
+    position: absolute;
+    right: 1rem;
+}
+
+.profile-list{
+    width: 60vw;
+    background-color: rgb(175, 175, 253);
+    justify-content: space-evenly;
+    /* padding: 1rem 0; */
+    position: sticky;
+    top: 0;
+}
+
+.profile-list div{
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+.active{
+    background-color: rgb(143, 143, 248);
+}
+
+.list :hover{
+    cursor: pointer;
+    background-color: rgb(143, 143, 248);
+}
+.profile-list div:hover{
+    color: darkblue;
+    background-color: rgb(143, 143, 248);
+}
+
+.profile-content{
+    width: 60vw;
+    background-color: #f1e9e9;
+    min-height: 35vh;
+    height: 100%;
+}
+
+.page{
+    width: 40vw;
+    padding: 1rem 0;
+}
+
+.page img{
+    width: 20rem;
+    height: auto;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+
+
+
+.post-container{
+    width: inherit;
+    position: relative;
+}
+
+#post{
+    position: absolute;
+    right: 0;
+    color: blue;
+}
+
+#post img{
+    width: 2rem;
+    margin: auto;
+    border-radius: 0rem;
+}

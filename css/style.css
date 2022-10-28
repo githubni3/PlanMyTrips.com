@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap');
+
+:root {
+    --theme-color: rgb(120, 242, 218);
+    --theme-gradient-color: linear-gradient(45deg, rgb(154, 220, 232), rgb(129, 129, 219));
+    --font1: 'Baloo Bhaina 2', cursive;
+    --font2: 'Noto Sans', sans-serif;
+}
+
+body {
+    background-image: var(--theme-gradient-color);
+}
+
+.container {
+    width: 100vw;
+    /* height: 100vh; */
+    position: relative;
+    top: 0;
+    justify-content: baseline;
+}
+
+
+
+.container-right {
+    flex: 45%;
+    height: 110vh;
+    background-color: white;
+    border-radius: 6.25rem;
+    justify-content: space-evenly;
+    padding: 3rem 0;
+}
+
+.popular-destinations {
+    /* border: 2px solid red; */
+    /* background-color: #fff1f4; */
+    padding: 1rem;
+}
+
+.popular-destinations-items {
+    padding: 0.5rem;
+}
+
+.popular-destination {
+    width: 13rem;
+    height: 13rem;
+    margin: 0.5rem;
+    position: relative;
+
+}
+
+.popular-destination img {
+    width: 10rem;
+    height: 10rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: rgb(231, 184, 219) 14px 11px 49px -8px;
+}
+
+#heart-icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 8px;
+    left: 32px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.popular-destination img:hover {
+    box-shadow: rgb(238, 148, 214) 14px 11px 49px 0;
+}
+
+.offers {
+    /* border: 2px solid red; */
+    background-color: #fff1f4;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.offers-items {
+    padding: 0.5rem;
+}
+
+.offer {
+    width: 13rem;
+    height: 13rem;
+    margin: 0 2rem;
+
+}
+
+.offer img {
+    width: 14rem;
+    height: 8rem;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    box-shadow: rgb(38 57 77) 14px 11px 49px -8px;
+}
+
+.offer img:hover {
+    box-shadow: rgb(38 57 77) 14px 11px 49px 0;
+}
+
+.sub-head {
+    align-self: baseline;
+    position: absolute;
+    width: inherit;
+}
+
+.name-tag {
+    margin-right: 10rem;
+}
+
+.see_all {
+    margin-left: 10rem;
+}
+
+.container-left {
+    flex: 45%;
+    height: auto;
+    background-color: blue;
+    border-top-right-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    /* z-index: -1; */
+    /* min-height: 50vh; */
+}
+
+/* image slider css */
+.section-container-left {
+    width: auto;
+    height: auto;
+}
+
+.slider-container {
+    max-width: 100vw;
+    height: auto;
+    margin: auto;
+    position: relative;
+
+}
+
+.slider {
+    display: none;
+}
+
+.slider a img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-top-right-radius: 6.25rem;
+    border-bottom-right-radius: 6.25rem;
+    opacity: 0.7;
+}
+
+.prev-button,
+.next-button {
+    width: 2.5rem;
+    height: 3.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgba(240, 240, 255, 0.7);
+    /* background : green; */
+    cursor: pointer;
+    position: absolute;
+    transition: color 0.3s ease;
+
+}
+
+.next-button {
+    right: 1rem;
+}
+
+.prev-button {
+    left: 1rem;
+}
+
+.next-button:hover,
+.prev-button:hover {
+    color: white;
+    border: 0.125rem solid white;
+    background-color: blue;
+    border-radius: 1.25rem;
+}
+
+.lines {
+    position: absolute;
+    display: flex;
+    bottom: 0.625rem;
+}
+
+.line {
+    padding: 0.09375rem 0.625rem;
+    margin: 0 0.1875rem;
+    background-color: rgba(240, 240, 255, 0.7);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.active,
+.line:hover {
+    background-color: white;
+}
+
+/* .footer {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    font-family: var(--font1);
+} */
+

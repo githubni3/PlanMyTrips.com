@@ -1,0 +1,52 @@
+
+@media screen and (max-width: 1200px) {
+    
+    .container{
+        flex-direction: column; 
+    }
+    .container-left{
+        z-index: -1;
+        height: 50vh;
+    }
+    .container-right {
+        border-radius: 0;
+        width: 100vw;
+    }
+    .form-input {
+        width: 17rem;
+        padding: 0px;
+        /* margin-left: 5px; */
+        font-size: 1rem;
+    }
+    .popular-destination img {
+        width: 7rem;
+        height: 7rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        margin-top: 0.5rem;
+    }
+    #heart-icon {
+        width: 20px;
+        height: 20px;
+        top: 19px;
+        left: 51px;
+    }
+
+    .offer img {
+        width: 10rem;
+        height: 6rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+   
+}
+
+
+@media screen and (max-width: 972px) {
+    .sub-head{
+        flex-direction: column;
+    }
+    .popular-destinations-items{
+        flex-wrap: wrap;
+    }
+}

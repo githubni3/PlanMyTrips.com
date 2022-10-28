@@ -1,0 +1,220 @@
+/* .container-left{
+} */
+body{
+    background-color: white;
+}
+.trips{
+    /* background-color: aquamarine; */
+    margin-top: -12rem;
+    background-color: rgb(208, 213, 243);
+    border-radius: 0 1rem;
+    margin: 1rem;
+}
+
+
+.way-items{
+    float: left;
+    margin: 3rem;
+    padding: 0.75rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.active,
+.way-items:hover{
+    border-radius: 1000rem;
+    box-shadow: blue 2px 2px 50px -8px;
+    font-weight: none;
+}
+
+
+.right-side {
+    flex: 45%;
+    height: fit-content;
+    background-color: rgb(84, 84, 245);
+    border-top-left-radius: 6.25rem;
+    border-bottom-left-radius: 6.25rem;
+}
+
+.right-side-items{
+    min-height: 80vh;
+}
+
+
+.input-form{
+    background-color: rgb(34, 11, 97);
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem;
+    
+}
+
+#route-type div{
+    margin: 0 2rem;
+}
+
+#route-type img{
+    width: 2rem;
+}
+
+
+
+.input-form label{
+    width: fit-content;
+    /* background-color: aqua; */
+}
+
+.input-form input{
+    padding: 5px;
+    margin: 5px;
+    border-radius: 0.5rem;
+}
+
+.btn3{
+    color: var(--color);
+    padding: 1px 15px;
+    margin: 30px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font1);
+    font-size: 1.1rem;
+}
+
+.btn3:hover{
+    background-color: yellow;
+    color: black;
+}
+
+#flight-form img{
+    filter: invert();
+}
+
+#flight-cabin{
+    margin-top:1rem;
+}
+
+.cabin-type{
+    margin: 0 1rem;
+}
+
+
+.filter{
+    position: absolute;
+    top: 5px;
+    width: 50vw;
+    margin: 0 5px;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+#btn{
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    padding: 5px 15px;
+    margin-left: 6px;
+    border: none ;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: var(--font1);
+}
+
+#trip-section {
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: fit-content;
+    min-height: 50vh;
+    background-color: rgb(84, 84, 245);
+    position: relative;
+    border-radius: 1rem;
+}
+
+#hotels,#cars{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-items: baseline */
+    margin-top: 70px;
+}
+
+#hotels,#cars{
+    height: 80vh;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+#hotels::-webkit-scrollbar ,#cars::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #ffffff;
+}
+
+#hotels::-webkit-scrollbar-thumb , #cars::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+    background-color: black;
+}
+
+.h-card{
+    margin: 3rem 0rem;
+    background-color: white;
+    width: fit-content;
+    margin: 1rem auto;
+    border-radius: 1rem 0;
+    max-height: 13rem;
+}
+
+
+.h-card img ,.c-card img:first-child {
+    width: 10rem;
+    height: 10rem;
+    margin: 0.5rem;
+}
+
+#stars {
+    color: blue;
+}
+
+#rating {
+    margin: 0 1rem;
+    border-radius: 10rem;
+    padding: 0 5px;
+    color: white;
+    background-color: rgb(236, 81, 107);
+}
+
+#amenities img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0rem 1rem
+}
+
+.c-card{
+    margin: 3rem 0rem;
+    background-color: white;
+    width: fit-content;
+    margin: 1rem auto;
+    border-radius: 1rem 0;
+    max-height: 13rem;
+}
+
+#price {
+    margin: 10px 1rem;
+}
+
+#price1 {
+    margin: 0 20px;
+}
+
+#feature {
+    margin: 10px 1rem;
+}
+
+.feature-box {
+    background-color: rgb(219, 236, 250);
+    margin: 0 4px;
+    padding: 5px;
+    border-radius: 5px;
+}

@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6efd1a9509.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/utilies.css">
+    <link rel="stylesheet" href="css/explore.css">
+    <link rel="stylesheet" href="css/explore-res.css">
+    <title>explore</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!--Navbar  -->
+    <nav class="navigation flexX">
+        <div class="nav-part-1">
+            <div><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        </div>
+        <div class="openMenu" onclick="showM()"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-part-2">
+            <ul class="nav-list flexX">
+                <li class="nav-list-elements "><a href="/">
+                        <div class="flexY"><img src="img/svg/home.png" alt="Image"></div>
+                        <div class="center white-text">Home</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/explore.html">
+                        <div class="flexY"><img src="img/svg/explore.png" alt="Image"></div>
+                        <div class="center white-text">Explore</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/trips.html">
+                        <div class="flexY"><img src="img/svg/trip.png" alt="Image"></div>
+                        <div class="center white-text">Trips</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/profile.html">
+                        <div class="flexY"> <img src="img/svg/profile.png" alt="Image"></div>
+                        <div class="center white-text">Profile</div>
+                    </a></li>
+                <div class="logout" onclick="Logout()">Logout</div>
+            </ul>
+        </div>
+        <div class="closeMenu" onclick="closeM()"><i class="fa-solid fa-xmark"></i></div>
+    </nav>
+    <div class="container flexX">
+    </div>
+
+    <header class="background">
+        <section id="exp-search">
+            <form action="/explore.html" method="get">
+                <input class="search text-size-1" type="text" name="query" placeholder="&#128269; Search here">
+            </form>
+        </section>
+        
+    </header>
+    
+
+    <div id="up-arrow" class="center text-size-2">
+        <a href="#explore-section"><img src="img/uparrow.svg" alt=""></a>
+    </div>
+    <section id="explore-section">
+        <div id="top">
+            <h1 class="center">Popular Places in India</h1>
+        </div>
+        <div class="places m-auto flexY">
+            <div id="place1"class="place-item">
+                <span class="text-size-1">1. Goa</span>
+                <div class="center"><img src="img/img-explore/explore/1.jpg" alt=""></div>
+                <div id="about-place">Famous for its pristine beaches, hippie vibes, laidback lifestyle and vibrant
+                    parties, Goa is
+                    counted among the best holiday destinations in India. The union territory is frequented by tourists
+                    year-round, especially in the winter season when the climate is pleasant, and the entire place comes
+                    alive with Christmas and New Year celebrations. However, seasoned tourists do not shun Goa during
+                    summer either. If you are looking for a peaceful and economical holiday, try to visit Goa during the
+                    offseason when the sun-kissed beaches, flea markets and other attractions are less crowded.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: November to February</li>
+                    <li><b>Ideal Duration</b>: 4-5 days</li>
+                    <li><b>Places to Visit in Goa</b>: Palolem Beach, Dudhsagar Falls, Basilica of Bom Jesus, Aguada
+                        Fort, Baga Beach, Anjuna Beach, Calangute Beach, Shree Mangesha Temple, Immaculate Conception
+                        Church</li>
+                    <li><b>Things to Do in Goa</b>: Beach hopping, water sports, shopping at flea markets, visiting
+                        Portuguese-style churches, enjoying the nightlife, tasting authentic Goan cuisine</li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Dabolim International Airport</li>
+                            <li><b>Nearest Train Station</b>: Vasco-Da-Gama Railway Station (North Goa); Madgaon
+                                Junction (South Goa)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place2"class="place-item">
+                <span class="text-size-1">2. Agra</span>
+                <div class="center"><img src="img/img-explore/explore/2.jpg" alt=""></div>
+                <div id="about-place">Say Agra and the first thing that comes to mind is the magnificent Taj Mahal, one
+                    of the Seven Wonders of the World. This beautiful city with its rich historical background is
+                    situated in Uttar Pradesh, on the banks of River Yamuna. It is counted among the top holiday
+                    destinations for architecture lovers and history buffs, thanks to many amazing Mughal architectural
+                    masterpieces that adorn the cityscape. No matter how many times you visit Agra, the charm of the Taj
+                    Mahal and other monuments will never fail to impress. The city is a treat for shopaholics and
+                    foodies as well.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: October to March</li>
+                    <li><b>Ideal Duration</b>: 2 days</li>
+                    <li><b>Places to Visit in Agra</b>: Agra Fort, Jama Masjid, Abkar’s Tomb, Itimad-ud-Daulah’s Tomb,
+                        Mehtab Bagh, Gurudwara Guru Ka Taal, Dolphin Water Park, Wildlife Conservation and Care Centre
+                    </li>
+                    <li><b>Things to Do in Agra</b>: Boat ride on Yamuna River, exploring popular monuments, watching
+                        the Light and Sound Show at Agra Fort, visiting Fatehpur Sikri, shopping at Kinari Bazaar,
+                        Subhash Bazaar and TDI Mall, relishing authentic Mughlai dishes and street foods</li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Agra Airport; New Delhi’s Indira Gandhi International Airport
+                            </li>
+                            <li><b>Nearest Train Station</b>: Agra Cantonment Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place3"class="place-item">
+                <span class="text-size-1">3. Rajasthan</span>
+                <div class="center"><img src="img/img-explore/explore/3.jpg" alt=""></div>
+                <div id="about-place">The land of kings, Rajasthan is a vibrant state that attracts history buffs,
+                    architecture lovers, wildlife enthusiasts and foodies alike. It lies in the north-western part of
+                    India and boasts an impressive amalgamation of natural beauty and manmade structures. From beautiful
+                    lakes, vast deserts and rich wildlife to magnificent palaces, forts and temples, the city has so
+                    many things for a wonderful vacation. What’s more, a road trip here takes you through several small
+                    and beautiful villages showcasing rich Rajasthani culture and traditions. Rajasthan is one of those
+                    places that you can visit again and again.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: November to February</li>
+                    <li><b>Ideal Duration</b>: 6-7 days </li>
+                    <li><b>Places to Visit in Rajasthan</b>: Jaipur, Udaipur, Jaisalmer, Jodhpur, Bikaner, Mount Abu,
+                        Chittorgarh, Ranthambore National Park, Sariska Tiger Reserve, Keoladeo National Park</li>
+                    <li><b>Things to Do in Rajasthan</b>: Exploring forts and palaces, paying respect at temples,
+                        enjoying folk dance and music festivals like Bikaner Camel Festival, Pushkar Fair, Gangaur
+                        Festival, Elephant Festival and Teej, visiting wildlife parks, gorging on delectable Rajasthani
+                        dishes, shopping
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Jaipur International Airport,
+                                Maharana Pratap Airport ,
+
+                                Jodhpur Airport,
+
+                                Jaisalmer Airport,
+
+                                New Delhi’s Indira Gandhi International Airport</li>
+                            <li><b>Nearest Train Station</b>: Railway stations at Jaipur, Udaipur, Ajmer, Alwar,
+                                Bharatpur, Jaisalmer, Jodhpur, Kota, Nagaur, Sikar, Bikaner, etc
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place4"class="place-item">
+                <span class="text-size-1">4. Delhi</span>
+                <div class="center"><img src="img/img-explore/explore/4.jpg" alt=""></div>
+                <div id="about-place">New Delhi, the national capital of India, is one of the most cliched yet popular tourist destinations in the country. The state has so much to offer that visiting it once or twice is not enough. Delhi is dotted with iconic Mughal monuments, temples, heritage sites, performing arts venues, colourful bazaars, shopping malls, planetariums, museums, and restaurants, so there is something for everyone here. Chandni Chowk, the oldest and busiest market in the country, is in Delhi. The city also houses many places of political importance, like Rashtrapati Bhawan, Parliament of India, and India Gate.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: October to March</li>
+                    <li><b>Ideal Duration</b>: 3-4 days</li>
+                    <li><b>Places to Visit in Delhi</b>: Red Fort, Humayun’s Tomb, Qutub Minar, Lotus Temple, Akshardham Temple, Purana Qila, Jantar Mantar, Gurudwara Bangla Sahib Ji, Nehru Park, Janpath Market
+                    </li>
+                    <li><b>Things to Do in Delhi</b>: Explore Connaught Place, Sarojini Nagar Market and Hauz Khas Village, enjoy delicacies at Parathe Wali Gali, shop for handicrafts, souvenirs, antiques and more at Dilli Haat, experience Delhi’s nightlife, take a HoHo bus tour
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Indira Gandhi International Airport</li>
+                            <li><b>Nearest Train Station</b>: New Delhi Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place5"class="place-item">
+                <span class="text-size-1">5. Munnar</span>
+                <div class="center"><img src="img/img-explore/explore/5.jpg" alt=""></div>
+                <div id="about-place">Nestled in the Western Ghats in the state of Kerala, Munnar is counted among the most serene and beautiful places in India. The hill station boasts impeccable natural beauty in the form of rolling hills, scenic valleys, virgin forests, waterfalls, streams, national parks, tea and spice plantations and winding walkways. However, it is the unmissable colonial charm of Munnar that attracts many tourists time and again. The hill station was a popular holiday destination for the British and you can see many churches, English colonial bungalows and cottages and other structures here.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: September to March</li>
+                    <li><b>Ideal Duration</b>: 3-4 days</li>
+                    <li><b>Places to Visit in Munnar</b>: Echo Point, Top Station, Atukkad Waterfalls, Eravikulam National Park, Tata Tea Museum, Pallivasal Falls, Chinnar Wildlife Sanctuary, Rose Garden, Kolukkumalai Tea Estate
+                    </li>
+                    <li><b>Things to Do in Munnar</b>: Speed boating and horse riding at Mattupetty Dam, enjoying boat rides at Kundala Dam and Lake, visiting tea plantations, enjoying fun rides at Wonder Valley Adventure and Amusement Park, rock climbing, trekking and rappelling
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Cochin International Airport</li>
+                            <li><b>Nearest Train Station</b>: Aluva Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place6"class="place-item">
+                <span class="text-size-1">6. Coorg</span>
+                <div class="center"><img src="img/img-explore/explore/6.jpg" alt=""></div>
+                <div id="about-place">Surrounded by majestic mountain ranges and boasting a lush green landscape, Coorg or Kodagu is yet another cliched holiday destination that is worth the hype. This hill station is in the state of Karnataka and a popular weekend getaway for nature lovers and solace seekers. From lush green hills and sparkling streams to quaint villages and vast expanses of coffee and spice plantations, the charm of Coorg is unmatchable. Since Coorg enjoys pleasant weather year-round, it is a popular destination for people in Bangalore who are looking to escape the city chaos.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: October to June</li>
+                    <li><b>Ideal Duration</b>: 3-4 days</li>
+                    <li><b>Places to Visit in Coorg</b>: Abbey Falls, Raja’s Seat, Shri Omkareshwara Temple, Government Museum Madikeri, Raja’s Tomb, Talakaveri, Madikeri Fort, Honnamana Kere Lake, Namdroling Monastery
+                    </li>
+                    <li><b>Things to Do in Coorg</b>: Spending quiet time near waterfalls, taking a walk-through coffee and spice plantations, enjoying river rafting, going on a wildlife safari at Nagarhole National Park, trekking to Tadiandamol Peak</li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Mangalore International Airport</li>
+                            <li><b>Nearest Train Station</b>: Mysuru Junction</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place7"class="place-item">
+                <span class="text-size-1">7. Manali</span>
+                <div class="center"><img src="img/img-explore/explore/7.jpg" alt=""></div>
+                <div id="about-place">Situated in the Kullu Valley of Himachal Pradesh, Manali draws tourists with its natural beauty and tranquillity. The hill station is frequented by travellers from across the country, especially during the summer season when cities reel under the scorching heat. Snow-capped mountains, dense forests, riverine valleys and sparkling streams add to the beauty of the hill station and make it one of the most popular holiday destinations in India. Another charming thing about Manali is that it showcases a beautiful blend of rich cultural heritage and modernisation. Besides spending time in serenity and soaking in the beauty of the surroundings, you can engage in thrilling adventure activities here for a memorable vacation.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: October to June</li>
+                    <li><b>Ideal Duration</b>: 3-5 days</li>
+                    <li><b>Places to Visit in Manali</b>: Manu Temple, Hidimba Devi Temple, Museum of Himachal Culture and Folk Art, Jogini Falls, Himalayan Nyinmapa Tibetan Buddhist Temple, Nehru Kund, Mall Road
+                    </li>
+                    <li><b>Things to Do in Manali</b>: Paragliding, parachuting and horse riding at Solang Valley, mountain biking, skiing and sledge riding at Rohtang Pass, trekking, river rafting, ziplining, zorbing
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Bhuntar Airport</li>
+                            <li><b>Nearest Train Station</b>: Joginder Nagar Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place8"class="place-item">
+                <span class="text-size-1">8. Ooty</span>
+                <div class="center"><img src="img/img-explore/explore/8.jpg" alt=""></div>
+                <div id="about-place">Ooty is one of the most frequented holiday destinations for tourists from Tamil Nadu, Kerala and Karnataka. Given the fact that the southern part of India gets too hot during the summer season, a trip to Ooty offers the much-needed respite from the heat. This picturesque and serene hill station is also a popular honeymoon destination among couples. Ooty offers stunning views of the Nilgiri Hills and lush green landscapes dotted with alpine woods, clear lakes, emerald green tea estates and colourful blossoms. The hill station also houses the popular Nilgiri Mountain Railway which was declared a UNESCO World Heritage Site in 2005.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: October to June</li>
+                    <li><b>Ideal Duration</b>: 2-3 days</li>
+                    <li><b>Places to Visit in Ooty</b>: Ooty Botanical Gardens, Dolphin’s Nose, Rose Garden, Avalanche Lake, Doddabetta Peak, St Stephan’s Church, Thread Garden, Kalhatti Falls, Annamalai Temple, Kamraj Sagar Lake, Catherine Falls</li>
+                    <li><b>Things to Do in Ooty</b>: Boating, birdwatching, enjoying picnic and nature photography at Ooty Lake and Emerald Lake, going on a toy train ride, visiting tea gardens at Kotagiri, trekking
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Coimbatore International Airport</li>
+                            <li><b>Nearest Train Station</b>: Udagamandalam Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place9"class="place-item">
+                <span class="text-size-1">9. Lonavala and Khandala</span>
+                <div class="center"><img src="img/img-explore/explore/9.jpg" alt=""></div>
+                <div id="about-place">Perched at a height of 622 metres above sea level, Lonavala and Khandala are twin hill stations in the state of Maharashtra. Thanks to their pleasant weather conditions and proximity to Mumbai and Pune, the hill stations are frequented by Mumbaikars and Punekars year-round. Both Lonavala and Khandala come to life during the monsoon season when lush greenery, sparkling lakes and milky-white waterfalls add to the beauty of the landscape. Besides being a nature lover’s delight, the hill stations are quite popular among adventure enthusiasts.
+
+
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: December to February; July to September</li>
+                    <li><b>Ideal Duration</b>: 2-3 days</li>
+                    <li><b>Places to Visit in Lonavala and Khandala</b>: Tiger’s Leap, Rajmachi Fort, Aamby Valley, Lohagad Fort, Bhushi Dam, Sunil’s Celebrity Wax Museum, Visapur Fort, Tikona Fort, Narayani Dham Temple
+                    </li>
+                    <li><b>Things to Do in Lonavala and Khandala</b>: Exploring the popular rock-cut Bhaja and Karla Caves, enjoying a fun-filled day at Imagicaa Entertainment Park, planning a picnic at Lonavala Lake, exploring local shops
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Pune International Airport; Mumbai’s Chhatrapati Shivaji Maharaj International Airport</li>
+                            <li><b>Nearest Train Station</b>: Lonavala Railway Station; Khandala Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place10"class="place-item">
+                <span class="text-size-1">10. Shillong</span>
+                <div class="center"><img src="img/img-explore/explore/10.jpg" alt=""></div>
+                <div id="about-place">Known for pleasant weather conditions and picturesque locations, Shillong in Meghalaya is one of the most cliched yet highly frequented tourist destinations in India. The hill station is popularly known as Scotland of the East, thanks to the rolling hills, gushing waterfalls and lovely landscape that reminded European colonists of stunning Scotland. Shillong also boasts crystal-clear lakes, high mountain peaks and amazing golf courses, museums and cafes. What’s more, the distinct culture, delectable local cuisines and amazing shopping hubs promise a fun-filled vacation every time.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: September to May</li>
+                    <li><b>Ideal Duration</b>: 4-5 days</li>
+                    <li><b>Places to Visit in Shillong</b>: Umiam Lake, Elephant Waterfalls, Shillong Peak, Cathedral of Mary Help of Christians, Police Bazaar, Don Bosco Museum, Sweet Falls, Phan Nonglait Park, Spread Eagle Falls, Lady Hydari Park, Sohpetbneng
+                    </li>
+                    <li><b>Things to Do in Shillong</b>: Picnicking, shopping, trekking, cliff jumping, zip-lining, river rafting
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Shillong Airport; Guwahati International Airport</li>
+                            <li><b>Nearest Train Station</b>: Guwahati Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place11"class="place-item">
+                <span class="text-size-1">11. Varanasi</span>
+                <div class="center"><img src="img/img-explore/explore/11.jpg" alt=""></div>
+                <div id="about-place">Situated on the banks of River Ganga in Uttar Pradesh, the holy city of Varanasi or Banaras is counted among the most sacred places in India. The city is known for some of the most revered temples and Ghats in the country and is frequented by devotees and tourists from across the world. Varanasi, one of the oldest cities in the world, is also popular as the home of Lord Shiva and Goddess Parvati. It is believed that taking a dip in the Ganges can wash away all your sins. The bustling city is popular for its museums, authentic Banarasi food, Banarasi sarees and handicrafts as well.
+
+
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: November to February</li>
+                    <li><b>Ideal Duration</b>: 2-3 days</li>
+                    <li><b>Places to Visit in Varanasi</b>: Shri Kashi Vishwanath Temple, Dashashwamedh Ghat, Manikarnika Ghat, Ramnagar Fort, Shri Durga Temple, Kaal Bhairav Temple, Sarnath Museum, Sankatmochan Temple
+                    </li>
+                    <li><b>Things to Do in Varanasi</b>: Seeking blessings at temples, enjoying delectable Banarasi food and sweetmeats, shopping for Banarasi silk sarees at Thateri Bazaar, Vishwanath Gali and Temple Bazaar
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Varanasi’s Lal Bahadur Shastri International Airport</li>
+                            <li><b>Nearest Train Station</b>: Varanasi Junction</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place12"class="place-item">
+                <span class="text-size-1">12. Kolkata</span>
+                <div class="center"><img src="img/img-explore/explore/12.jpg" alt=""></div>
+                <div id="about-place">Known as the City of Joy and rightly so, Kolkata is another holiday destination that is frequented by tourists from across the country. A beautiful blend of art, culture, fashion and literature, Kolkata is the perfect getaway for different types of travellers. What’s more, it is a delight for foodies, shopaholics and nightlife lovers as well. This vibrant city is a perfect example of old-world charm meeting modernisation. From historical monuments, temples and trams to modern science museums, gigantic shopping malls and fine dining restaurants, Kolkata has everything for a wonderful vacation.
+
+
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: October to February</li>
+                    <li><b>Ideal Duration</b>: 4-5 days</li>
+                    <li><b>Places to Visit in Kolkata</b>: Victoria Memorial, Howrah Bridge, Science City, Kalighat, Dakshineshwar Kali Temple, St Paul’s Cathedral, Belur Math, Eden Gardens, Indian Museum
+                    </li>
+                    <li><b>Things to Do in Kolkata</b>: Enjoying water rides and rollercoasters at Nicco Park, spending some peaceful time at Eco Park, trying lip-smacking street food, exploring Park Street
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Netaji Subhash Chandra Bose International Airport</li>
+                            <li><b>Nearest Train Station</b>: Howdah Railway Station; Sealdah Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place13"class="place-item">
+                <span class="text-size-1">13. Amritsar</span>
+                <div class="center"><img src="img/img-explore/explore/13.jpg" alt=""></div>
+                <div id="about-place">Steeped in history and spirituality, Amritsar is one of the most-visited cities in the state of Punjab. It is home to the famous Golden Temple or Sri Harmandir Sahib and is frequented by devout Sikhs and tourists from across the globe. The city also gives a nudge to your patriotic side with sites like Jallianwala Bagh and Wagah Border. The charm of Amritsar is such that tourists visit the place time and again to pay their respects at Golden Temple and watch the mesmerising Wagah-Attari Border ceremony held at the India-Pakistan border.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: November to March</li>
+                    <li><b>Ideal Duration</b>: 3-4 days</li>
+                    <li><b>Places to Visit in Amritsar</b>: Akal Takht, Mata Lal Devi Mandir, Partition Museum, Gobindgarh Fort, Central Sikh Museum, War Memorial and Museum, ISKCON Temple, Gurudwara Shaheed Ganj Sahib
+                    </li>
+                    <li><b>Things to Do in Amritsar</b>: Trying Punjabi cuisine and street food, doing ‘Langar Seva’ at Golden Temple, buying colourful souvenirs, having fun at Suncity Amusement and Waterpark, birdwatching at Harike Wetlands
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Sri Guru Ram Dass Jee International Airport</li>
+                            <li><b>Nearest Train Station</b>: Amritsar Junction
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place14"class="place-item">
+                <span class="text-size-1">14. Sikkim</span>
+                <div class="center"><img src="img/img-explore/explore/14.jpg" alt=""></div>
+                <div id="about-place">A jewel in the north-eastern part of India, Sikkim is one of the most beautiful and serene holiday destinations you will ever find. Although a vacation in Sikkim sounds cliched, the hill station is a popular choice among nature enthusiasts and peace seekers. From snow-capped mountains and colourful meadows to thick woodlands and exotic flowers, there are so many things that add a distinctive charm to this hill station. And that’s not all, the town also houses some pretty monasteries, stupas and Hindu shrines that make it a religiously significant place for the Hindus and Buddhists.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: March to June; October to December</li>
+                    <li><b>Ideal Duration</b>: 4-5 days</li>
+                    <li><b>Places to Visit in Sikkim</b>: Gangtok, Nathula Pass, Tsomgo Lake, Kanchenjunga Base Camp, Pelling, Zuluk, Gurudongmar Lake, Rumtek Monastery, Namchi, Jawaharlal Nehru Botanical Garden
+                    </li>
+                    <li><b>Things to Do in Sikkim</b>: Riding cable cars, river rafting, paragliding, trekking, shopping, mountain biking, camping, riding helicopter over Gangtok Valley, riding yak at Tsomgo Lake
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Sikkim’s Pakyong Airport; Bagdogra International Airport</li>
+                            <li><b>Nearest Train Station</b>: New Jalpaiguri Railway Station
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="place15"class="place-item">
+                <span class="text-size-1">15. Shimla</span>
+                <div class="center"><img src="img/img-explore/explore/15.jpg" alt=""></div>
+                <div id="about-place">Located in Himachal Pradesh at a height of 2276 metres above sea level, Shimla has been attracting honeymooners and families for decades. This hill station was the summer capital of British India, and so, the stunning colonial architecture and old-world charm here are unmissable. Shimla mesmerises nature lovers as well with its snow-covered mountains, rolling valleys, and beautiful lakes. It is also home to a UNESCO World Heritage Site – Kalka-Shimla train route, which offers dramatic views of the surrounding hills and villages. You can also enjoy adventurous activities and relish local delicacies in the cosy restaurants, cafes and hotels in Shimla.
+                </div>
+
+                <ul class="list">
+                    <li><b>Best Time to Visit</b>: March to June</li>
+                    <li><b>Ideal Duration</b>: 4-5 days</li>
+                    <li><b>Places to Visit in Shimla</b>: Mall Road, Kufri, Green Valley, Jakhu Temple, Chail, The Ridge, Shimla Christ Church, Narkanda, Himalayan Bird Park, Annandale, Himachal State Museum, Theog, Kali Bari Temple</li>
+                    <li><b>Things to Do in Shimla</b>: Tasting mouth-watering foods and cocktails at Café Shimla Point, riding the toy train, skiing, trekking, horse riding
+                    </li>
+                    <li><b>How to Reach</b>
+                        <ul class="sub-list">
+                            <li><b>Nearest Airport</b>: Shimla’s Jubbarhatti Airport; Chandigarh International Airport</li>
+                            <li><b>Nearest Train Station</b>: Kalka Railway Station; Chandigarh Railway Station</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="social-container"></section>
+    <div class="social">
+        <h1 class="center">Connect With Us</h1>
+        <div id="social-handles" class="flexX">
+            <img src="img/social/facebook.svg" alt="facebook.com"><img src="img/social/instagram.svg" alt="instagram.com"><img src="img/social/pinterest.svg" alt="pinterest.com"><img src="img/social/twitter.svg" alt="twitter.com"><img src="img/social/linkedin.svg" alt="linkedin.com"><img src="img/social/youtube.svg" alt="youtube.com">
+        </div>
+    </div>
+    <footer class="footer flexY">
+        <div>copyright &copy; 2022 : PlanMyTrips.com all rights reserved</div>
+        <div class="attribution">
+            Attributions : 
+            <a target="_blank"
+                href="https://www.freepik.com/free-vector/india-background_5974093.htm#query=travel%20tourism%20logo&position=3&from_view=keyword">Image
+                by macrovector</a>|
+            <a target="_blank" href="https://icons8.com">icons8.com</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@mike_swigunski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike
+                Swigunski</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/maldives-tourism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://www.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_19894677.htm#query=flight%20booking&position=16&from_view=keyword">Freepik</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jeffreak08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeffrey
+                Francisco</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jakefagan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake
+                Fagan</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/car-for-off-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank" href="https://www.svgrepo.com/">www.svgrepo.com </a>|
+            <a target="_blank" href="https://uxwing.com/red-heart-icon/">uxwing.com</a>|
+            <a target="_blank"
+                href="https://www.fabhotels.com/blog/tourist-destinations-in-india/">www.fabhotels.com</a>|
+        </div>
+    </footer>
+    
+    <script src="js/utilites.js"></script>
+</body>
+
+</html>

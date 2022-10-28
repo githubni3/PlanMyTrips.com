@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6efd1a9509.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/utilies.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/profile-res.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <!--Navbar  -->
+    <nav class="navigation flexX">
+        <div class="nav-part-1">
+            <div><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+        </div>
+        <div class="openMenu" onclick="showM()"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-part-2">
+            <ul class="nav-list flexX">
+                <li class="nav-list-elements "><a href="/">
+                        <div class="flexY"><img src="img/svg/home.png" alt="Image"></div>
+                        <div class="center white-text">Home</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/explore.html">
+                        <div class="flexY"><img src="img/svg/explore.png" alt="Image"></div>
+                        <div class="center white-text">Explore</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/trips.html">
+                        <div class="flexY"><img src="img/svg/trip.png" alt="Image"></div>
+                        <div class="center white-text">Trips</div>
+                    </a></li>
+                <li class="nav-list-elements"><a href="/profile.html">
+                        <div class="flexY"> <img src="img/svg/profile.png" alt="Image"></div>
+                        <div class="center white-text">Profile</div>
+                    </a></li>
+                <div class="logout" onclick="Logout()">Logout</div>
+            </ul>
+        </div>
+        <div class="closeMenu" onclick="closeM()"><i class="fa-solid fa-xmark"></i></div>
+    </nav>
+
+    <div class="container flexX">
+        <div class="container-profile flexY">
+            <div class="coverphoto">
+                <img src="img/img-profile/camera.svg" alt="edit">
+            </div>
+            <div class="profile">
+                <div class="profileDetail flexX">
+                    <span class="profilephoto">
+                        <img src="img/img-profile/edit.svg" alt="" id="edit">
+                        <img src="img/img-profile/profilePhoto.jpg" alt="photo">
+                    </span>
+                    <div class="profile-details flexY">
+                        <span class="text-size-1"><b>Nitin Kumar Saxena</b></span>
+                        <br>
+                        <span id="profile-about">🍅🍅💖💖</span>
+                        <br>
+
+                    </div>
+                    <a id="edit-profile" href="/profile.html">Edit Profile</a>
+                </div>
+                <hr>
+                <ul class="profile-list m-auto flexX">
+                    <div class="list active" onclick="content(0)">Activities</div>
+                    <div class="list" onclick="content(1)">My Trips</div>
+                    <div class="list" onclick="content(2)">Photos</div>
+                    <div class="list" onclick="content(3)">Reviews</div>
+
+                </ul>
+                <div class="profile-content m-auto">
+                    <div class="page m-auto">
+                        <div class="content-1">
+                            <h2>Camping</h2>
+                            <br>
+                            <span>The Camp Exotica is a perfect weekend getaway option located in Kullu in the Manali
+                                district of Himachal Pradesh. The accommodation provided is world class and the tents
+                                simply leave you connecting with nature like never before. The location of these tents
+                                is such that it gives a panoramic view of the surrounding mountains. The food provided
+                                is of fine quality and the incredible view will simply leave you in awe of this
+                                adventure. Make sure to take out time for this pleasure full camping trip</span>
+                            <div><img src="img/img-profile/activities/camping.jpg" alt="this is image"></div>
+                        </div>
+                        <div class="content-2">
+                            <h2>Off-Road Fun</h2>
+                            <br>
+                            <span>
+                                <h4>Rohtang La-Khoksar trail, Himachal Pradesh</h4>
+                                Many call it extreme off-roading, thanks to the conditions one has to ride on these
+                                tracks. Bikes are preferred on this difficult terrain as one has to swiftly and
+                                carefully navigate over stretches narrow enough to make the best of riders take a moment
+                                to breathe and focus. The roads are ROCKY. Even experienced riders choose to follow one
+                                another on these tricky roads.
+                            </span>
+                            <div><img src="img/img-profile/activities/off-road.jpg" alt="this is image"></div>
+                        </div>
+                        <div class="content-3">
+                            <h2>Sunset</h2>
+                            <br>
+                            <span>The <b>Golden City</b> of Rajasthan has the most Arabic aura in India as the vast
+                                boundaries
+                                of Jaisalmer present you luxurious tent stays, beautiful Havelis, camel rides,
+                                handcrafted shoes, and attractions like Jaisalmer Fort. The sunset here produces
+                                sensational silhouettes that will remain as a forever photographic treasure in your
+                                life.</span>
+                            <div><img src="img/img-profile/activities/Jaisalmer-Sunset.png" alt="this is image"></div>
+                        </div>
+                        <div class="content-4">
+                            <h2>Food Spot</h2>
+                            <br>
+                            <span>
+                                <h4>Dilli Haat</h4>
+                                Apart from the amazing set of traditional clothes, jewellery and handicrafts, Dilli
+                                Haat is also known for its amazing food.It has food stalls from all over India where you
+                                can get different state’s delicacies quickly and it’s affordable, too!
+                            </span>
+                            <div><img src="img/img-profile/activities/food-spot.jpg" alt="this is image"></div>
+                        </div>
+
+                    </div>
+                    <div class="page m-auto d-none">
+                        <div class="content-1">
+                            <h2>Sanjay Van</h2>
+                            <span class="trip-date">26 Mar 2022</span>
+                            <div><img src="img/img-profile/mytrips/sanjay-van.jpg" alt="this is image"></div>
+                        </div>
+                        <div class="content-2">
+                            <h2>Lodhi Garden </h2>
+                            <span class="trip-date">23 feb 2022</span>
+                            <div><img src="img/img-profile/mytrips/Lodhi-Garden.jpg" alt="this is image"></div>
+                        </div>
+                    </div>
+                    <div class="page m-auto d-none ">
+                        <div class="post-container">
+                            <div id="post">
+                                <img src="img/img-profile/post-icon.svg" alt="post-icon"><br>
+                                <span class="text-size-1">post a photo</span>
+                            </div>
+                        </div>
+                        <div class="content-1">
+                            <h2>Lodhi Garden</h2>
+                            <div><img src="img/img-profile/photos/1.jpg" alt="this is image"></div>
+                        </div>
+                        <div class="content-2">
+                            <div><img src="img/img-profile/photos/2.jpg" alt="this is image"></div>
+                        </div>
+                        <div class="content-3">
+                            <h2>Sanjay Van </h2>
+                            <div><img src="img/img-profile/photos/3.jpg" alt="this is image"></div>
+                        </div>
+                    </div>
+                    <div class="page m-auto d-none">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+
+    <section id="social-container"></section>
+    <div class="social">
+        <h1 class="center">Connect With Us</h1>
+        <div id="social-handles" class="flexX">
+            <img src="img/social/facebook.svg" alt="facebook.com"><img src="img/social/instagram.svg" alt="instagram.com"><img src="img/social/pinterest.svg" alt="pinterest.com"><img src="img/social/twitter.svg" alt="twitter.com"><img src="img/social/linkedin.svg" alt="linkedin.com"><img src="img/social/youtube.svg" alt="youtube.com">
+        </div>
+    </div>
+    <footer class="footer flexY">
+        <div>copyright &copy; 2022 : PlanMyTrips.com all rights reserved</div>
+        <div class="attribution">
+            Attributions : 
+            <a target="_blank"
+                href="https://www.freepik.com/free-vector/india-background_5974093.htm#query=travel%20tourism%20logo&position=3&from_view=keyword">Image
+                by macrovector</a>|
+            <a target="_blank" href="https://icons8.com">icons8.com</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@mike_swigunski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mike
+                Swigunski</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/maldives-tourism?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://www.freepik.com/free-photo/full-shot-travel-concept-with-landmarks_19894677.htm#query=flight%20booking&position=16&from_view=keyword">Freepik</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jeffreak08?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeffrey
+                Francisco</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/hotel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank"
+                href="https://unsplash.com/@jakefagan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jake
+                Fagan</a>|
+            <a target="_blank"
+                href="https://unsplash.com/s/photos/car-for-off-road?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>|
+            <a target="_blank" href="https://www.svgrepo.com/">www.svgrepo.com </a>|
+            <a target="_blank" href="https://uxwing.com/red-heart-icon/">uxwing.com</a>|
+            <a target="_blank"
+                href="https://www.fabhotels.com/blog/tourist-destinations-in-india/">www.fabhotels.com</a>|
+        </div>
+    </footer>
+
+    <script src="js/profile.js"></script>
+    <script src="js/utilites.js"></script>
+</body>
+
+</html>

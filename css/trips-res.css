@@ -1,0 +1,44 @@
+@media screen and (max-width: 1200px) {
+
+    .container {
+        flex-direction: column;
+    }
+    .container-right {
+        border-radius: 0;
+        width: 100vw;
+    }
+
+    .right-side {
+        width: 100vw;
+        border-radius: 0;
+        height: fit-content;
+    }
+    .right-side-items {
+        min-height: 45vh;
+    }
+
+}
+
+@media screen and (max-width:992px) {
+
+    .right-side-items {
+        min-height: 40vh;
+    }
+
+    .offers {
+        margin: 3rem;
+    }
+
+    .trips {
+        margin: 3rem;
+    }
+
+    .container-right {
+        border-radius: 0;
+    }
+
+    .right-side {
+        width: 100vw;
+        border-radius: 0;
+    }
+}

@@ -1,0 +1,45 @@
+@media screen and (min-width: 1201px){
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .coverphoto {
+        height: 25vh;
+    }
+    .page img {
+        width: 13rem;
+        border-radius: 0.5rem;
+    }
+    .profilephoto img {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 10rem;
+    }
+    #edit-profile {
+        right: 3rem;
+    }
+}
+
+@media screen and (max-width:992px){
+
+    .nav-list{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .page img {
+        width: 10rem;
+        border-radius: 0.5rem;
+    }
+    .profileDetail{
+        flex-direction: column;
+    }
+    .profileDetails{
+        font-size: 0.7rem;
+    }
+    #edit-profile{
+        font-size: 0.5rem;
+    }
+    .profile-list div {
+        padding: 0.5rem;
+    }
+}
